@@ -29,11 +29,11 @@
 -include device/htc/msm8660-common/BoardConfigCommon.mk
 
 # inherit from the proprietary version
--include vendor/htc/shooteru/BoardConfigVendor.mk
+-include vendor/htc/shooter/BoardConfigVendor.mk
 
-TARGET_BOOTLOADER_BOARD_NAME := shooteru
+TARGET_BOOTLOADER_BOARD_NAME := shooter
 
-BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := shooteru
+BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := shooter
 
 # 3D Support
 TARGET_HARDWARE_3D := true
@@ -46,7 +46,7 @@ TARGET_GPS_HAL_PATH := $(LOCAL_PATH)/gps
 EXTENDED_FONT_FOOTPRINT := true
 
 # Kernel Details
-TARGET_KERNEL_CONFIG := shooter_u_defconfig
+TARGET_KERNEL_CONFIG := shooter_defconfig
 
 # Camera
 BOARD_HTC_3D_SUPPORT := true
@@ -69,7 +69,7 @@ BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01400000
 #LOCAL_KERNEL := device/htc/shooteru/kernel/kernel-3.4
 
 # for 3.0 kernel
-LOCAL_KERNEL := device/htc/shooteru/kernel/kernel
+LOCAL_KERNEL := device/htc/shooter/kernel/kernel
 
 PRODUCT_COPY_FILES += $(LOCAL_KERNEL):kernel
 
@@ -140,6 +140,6 @@ TW_EXTERNAL_STORAGE_PATH := "/sdcard"
 TW_EXTERNAL_STORAGE_MOUNT_POINT := "sdcard"
 
 #Philz
-TARGET_COMMON_NAME := HTC EVO 3D GSM
+TARGET_COMMON_NAME := HTC EVO 3D CDMA
 
 
