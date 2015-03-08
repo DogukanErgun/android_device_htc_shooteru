@@ -56,12 +56,12 @@ TARGET_USES_ION := true
 
 # Bluetooth/Wifi
 -include device/htc/msm8660-common/bcmdhd.mk
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/htc/shooteru/bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/htc/shooter/bluetooth
 
 # Custom LUN File Path
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/class/android_usb/android0/f_mass_storage/lun/file
 
-BOARD_KERNEL_CMDLINE := console=ttyHSL0 androidboot.hardware=shooteru no_console_suspend=1 androidboot.selinux=permissive
+BOARD_KERNEL_CMDLINE := console=ttyHSL0 androidboot.hardware=shooter no_console_suspend=1 androidboot.selinux=permissive
 BOARD_KERNEL_PAGE_SIZE := 2048 
 BOARD_KERNEL_BASE := 0x48000000
 # for 3.4 kernel
@@ -97,7 +97,7 @@ BOARD_CHARGING_MODE_BOOTING_LPM := /sys/htc_lpm/lpm_mode
 
 
 # RIL
-BOARD_RIL_CLASS := ../../../device/htc/shooteru/ril
+BOARD_RIL_CLASS := ../../../device/htc/shooter/ril
 
 # Misc
 BOARD_USES_LEGACY_MMAP := true
@@ -126,7 +126,7 @@ TARGET_RECOVERY_PIXEL_FORMAT := "RGB_565"
 BOARD_RECOVERY_SWIPE := true
 TARGET_RECOVERY_LCD_BACKLIGHT_PATH := \"/sys/class/leds/lcd-backlight/brightness\"
 BOARD_USE_CUSTOM_RECOVERY_FONT := \"roboto_15x24.h\"
-BOARD_CUSTOM_GRAPHICS := ../../../device/htc/shooteru/recovery/graphics.c
+BOARD_CUSTOM_GRAPHICS := ../../../device/htc/shooter/recovery/graphics.c
 
 #TWRP
 DEVICE_RESOLUTION := 540x960
